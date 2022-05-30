@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hr.springintegration.dto.Student;
 import com.hr.springintegration.dto.Teacher;
-import com.hr.springintegration.gateway.MessagingWithRouterGateway;
+import com.hr.springintegration.gateway.MessagingWithPayloadTypeRouterGateway;
 
 @RestController
 @RequestMapping("/add")
-public class MessagingWithRouterController {
+public class MessagingWithPayloadTypeRouterController {
 
 	@Autowired
-	private MessagingWithRouterGateway gateway;
+	private MessagingWithPayloadTypeRouterGateway gateway;
 	
 	@PostMapping("/teacher")
 	public void addTeacher(@RequestBody final Teacher teacher)
