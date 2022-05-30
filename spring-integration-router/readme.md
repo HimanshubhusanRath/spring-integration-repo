@@ -12,3 +12,10 @@ Below Router types are described in the project
 
 
 **Note: Router is defined using @ServiceActivator annotation.**
+
+
+Filters
+---------
+- Filters are defined by using @Filter
+- These can be used to either allow the messages to go further in the flow or drop messages based on certain conditions. 
+- The condition checking can be done on the headers as well as the payload data.
