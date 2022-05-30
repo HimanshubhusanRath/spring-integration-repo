@@ -10,5 +10,7 @@ public interface MessagingWithTransformerGateway {
 
 	@Gateway(requestChannel = "com.hr.input.channel")
 	String sendMessage(final User user);
-	
+
+	@Gateway(requestChannel = "com.hr.before.header.enrich.channel")
+	String sendMessageWithEnrichHeader(final User user);
 }

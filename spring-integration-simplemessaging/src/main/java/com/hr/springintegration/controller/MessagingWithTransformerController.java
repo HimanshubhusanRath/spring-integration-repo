@@ -21,4 +21,10 @@ public class MessagingWithTransformerController {
 	{
 		return gateway.sendMessage(user);
 	}
+	
+	@PostMapping("/enrich-header")
+	public String enrichHeader(@RequestBody final User user)
+	{
+		return gateway.sendMessageWithEnrichHeader(user);
+	}
 }
